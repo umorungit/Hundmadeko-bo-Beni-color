@@ -1,0 +1,541 @@
+<!doctype html>
+
+<html lang="ja">
+
+<head>
+
+<meta charset="utf-8">
+
+
+
+<title>生地のカラー・柄一覧</title>
+
+<link href="color.css" rel="stylesheet" type="text/css">
+<link href="all.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+
+<!--<meta name="viewport" content="width=device-width,initial-scale=1.0">-->
+
+<script>
+
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.nav');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    nav.classList.toggle('active');
+
+    // アクセシビリティ対応
+    const isOpen = hamburger.classList.contains('active');
+    hamburger.setAttribute('aria-expanded', isOpen);
+    nav.setAttribute('aria-hidden', !isOpen);
+  });
+
+  // メニューの外側をクリックした時の処理
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav') && !e.target.closest('.hamburger') && nav.classList.contains('active')) {
+      hamburger.classList.remove('active');
+      nav.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', false);
+      nav.setAttribute('aria-hidden', true);
+    }
+  });
+});
+</script>
+
+
+</head>
+
+
+
+<body>
+
+<p class="beni">
+ <a href="工房top5.html"><img alt="ロゴの画像" src="img/logo7.png"></a>
+</p>
+
+
+<div class="header">
+  <button class="hamburger" aria-label="メニュー" aria-controls="nav-menu" aria-expanded="false">
+    <span class="hamburger__line"></span>
+    <span class="hamburger__line"></span>
+    <span class="hamburger__line"></span>
+  </button>
+
+  <nav id="nav-menu" class="nav" aria-hidden="true">
+
+
+    <ul class="nav__list">
+      <li class="nav__item"><a href="https://umorungit.github.io/Hundmadeko-bo-Beni/" class="nav__link">TOP</a></li>
+      <li class="nav__item"><a href="https://umorungit.github.io/Hundmadeko-bo-Beni-omoi/" class="nav__link">工房Beniの想い</a></li>
+      <li class="nav__item"><a href="https://umorungit.github.io/Hundmadeko-bo-Beni-scene/" class="nav__link">こんなシーンに</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Myリボンを作る</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">髪飾り一覧</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">生地の色・模様一覧</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">商品のご購入</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">工房情報</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">よくある質問</a></li>
+    </ul>
+  </nav>
+</div><!--header-->
+
+
+
+
+
+
+
+<h1>
+ <spn class="scene1">Color</spn><br>
+ <spn class="scene2">～生地の色・模様一覧～
+</spn></h1>
+
+
+
+<div class="all">
+
+
+<div class="box1">
+<h2>一覧表の見方</h2>
+
+<div class="box2">
+<p class="text1">
+ 工房Beniで取り扱っている、布の色と模様の一覧表です。『カラーコード』が一番近い色です。<br><br>
+ 背景を黒にした時のお色味もご覧いただけます。ぜひご活用ください。
+</p>
+
+<div class="box4">
+<div class="box3 code">
+<p class="color">
+色の名前
+<br>
+英語
+<br>
+カラーコード
+
+</p>
+</div><!--box3-->
+
+<div class="box3 black">
+<p class="back">
+<a href="#">背景を黒にする</a>
+</p>
+</div><!--box3-->
+</div><!--box4-->
+
+</div><!--box2-->
+</div><!--box1-->
+
+
+
+
+
+<div class="second">
+
+<h3>単色</h3>
+
+<div class="box5">
+<div class="box6 red">
+<p class="color fontwhite">
+赤 <br> Red
+<br>
+#ff0000
+</p>
+</div><!--box6-->
+
+
+<div class="box6 pink">
+<p class="color fontblack">
+ピンク <br> Pink
+<br>
+#fc0cd
+</p>
+</div><!--box6-->
+
+
+
+<div class="box6 white">
+<p class="color fontblack">
+白 <br> White
+<br>
+#fff
+</p>
+</div><!--box6-->
+
+
+</div><!--box5-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box5">
+<div class="box6 cream">
+<p class="color fontblack">
+クリーム色 <br> Cream
+<br>
+#ffffd1
+</p>
+</div><!--box6-->
+
+
+
+<div class="box6 violet">
+<p class="color fontwhite">
+濃い紫 <br>Violet
+<br>
+#4b0082
+</p>
+</div><!--box6-->
+
+
+
+<div class="box6 purple">
+<p class="color fontwhite">
+紫<br>Purple
+<br>
+#9370db
+</p>
+</div><!--box6-->
+
+
+
+
+
+</div><!--box5-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box5">
+<div class="box6">
+<p class="color">
+薄紫<br>Lavender
+<br>
+カラーコード
+</p>
+</div><!--box6-->
+
+
+
+<div class="box6 blue">
+<p class="color fontwhite">
+青<br>Blue
+<br>
+#00008b
+</p>
+</div><!--box6-->
+
+
+
+<div class="box6">
+<p class="color">
+水色<br>Sky blue
+<br>
+カラーコード
+</p>
+</div><!--box6-->
+
+
+</div><!--box5-->
+
+
+<div class="box5">
+<div class="box6">
+<p class="color">
+薄紫<br>lavender
+<br>
+カラーコード
+</p>
+</div><!--box6-->
+
+
+
+<div class="box6">
+<p class="color">
+青<br>blue
+<br>
+カラーコード
+</p>
+</div><!--box6-->
+
+
+
+<div class="box6">
+<p class="color">
+水色<br>sky blue
+<br>
+カラーコード
+</p>
+</div><!--box6-->
+
+
+</div><!--box5-->
+
+
+
+
+
+
+
+
+<h3>模様1</h3>
+
+<div class="box5">
+
+<div class="box6 checkpink">
+<p>
+チェックピンク
+</p>
+
+<p>
+Check pink
+</p>
+
+
+</div><!--box6-->
+
+
+
+<div class="box6 checkyellow">
+<p class="color">
+チェック黄色
+<br>
+Check yellow
+</p>
+</div><!--box6-->
+
+
+
+<div class="box6 checkbeige">
+<p class="color">
+チェックベージュ
+<br>
+Check beige
+</p>
+</div><!--box6-->
+
+
+</div><!--box5-->
+
+
+
+
+
+
+<div class="box5">
+
+<div class="box6 checkpurple">
+<p>
+チェック紫
+</p>
+
+<p>
+Check purple
+</p>
+
+
+</div><!--box6-->
+
+
+
+<div class="box6 checkblack">
+<p class="color fontblack">
+チェック黒
+</p>
+<p class="color fontwhite">
+Check white&black
+</p>
+</div><!--box6-->
+
+
+
+<div class="box6 checkblue">
+<p class="color fontwhite">
+チェック青薄クリーム
+<br>
+Check blue&cream
+</p>
+</div><!--box6-->
+
+
+</div><!--box5-->
+
+<p>
+※リボン1つにつき＋500円頂戴しております。
+</p>
+
+
+<h3>ベロア生地</h3>
+
+
+
+※リボン1つにつき＋500円頂戴しております。
+
+
+
+
+
+<h3>レース</h3>
+
+
+<div class="box5">
+
+<div class="box6 checkpurple">
+<p>
+レース白
+</p>
+
+<p>
+Lace　white
+</p>
+
+
+</div><!--box6-->
+
+
+
+<div class="box6 checkyellow">
+<p class="color">
+レース黄色
+<br>
+Lace yellow
+</p>
+</div><!--box6-->
+
+
+
+<div class="box6 checkbeige">
+<p class="color">
+チェックベージュ
+<br>
+Check beige
+</p>
+</div><!--box6-->
+
+
+</div><!--box5-->
+
+
+
+
+
+
+※リボン1つにつき＋500円頂戴しております。
+
+
+<h3>模様2</h3>
+角度によってお花の色が濃くなったり薄くなったいりて可愛いです。<br>
+
+※リボン1つにつき＋1000円頂戴しております。
+
+
+
+
+
+
+<h3>飾り紐</h3>
+
+
+※パールに変更の場合＋500円頂戴しております。
+
+</div><!--second-->
+
+
+
+<!--
+<div class="box2">
+<div class="box3">
+<h3>色の名前</h3>
+<p class="code">カラーコード</p>
+</div>
+
+<p class="black">■</p>
+<p class="white">■</p>
+</div>
+-->
+
+
+</div><!--all-->
+
+
+
+<footer>
+
+
+
+<div class="underbox1">
+<ul class="underul1">
+ <li class="underli1"><a href="工房top5.html">TOP</a></ll>
+ <li class="underli1"><a href="想い1.html">工房Beniの想い</a></ll>
+ <li class="underli1"><a href="こんなシーンに6.html">こんなシーンに</a></ll>
+ <li class="underli1"><a href="オリジナル髪飾りを作る1.html">Myリボンを作る</a></ll>
+</ul>
+
+<ul class="underul1">
+ <li class="underli1"><a href="髪飾り一覧2.html">髪飾り一覧</a></ll>
+ <li class="underli1"><a href="布のカラー・柄一覧.html">生地の色・模様一覧</a></ll>
+ <li class="underli1"><a href="商品購入1.html">商品のご購入</a></ll>
+ <li class="underli1"><a href="工房情報1.html">工房情報</a></ll>
+ <li class="underli1"><a href="工房情報1.html">よくある質問</a></ll>
+</ul>
+
+
+<ul class="underul1">
+ <li class="underli1"><a href="">LINE</a></ll>
+ <li class="underli1"><a href="https://www.instagram.com/workshop_beni/" target="_blank"">Instagram</a></ll>
+ <li class="underli1"><a href="">メルカリ</a></ll>
+ <li class="underli1"><a href="https://minne.com/@beni-shop" target="_blank">minne</a></ll>
+</ul>
+</div><!--underbox1-->
+
+
+
+<!--
+<ul class="underul2">
+ <li class="underli2"><a href=""><img alt="ラインの画像" src="img/line.png"></a></ll>
+ <li class="underli2"><a href="https://www.instagram.com/workshop_beni/" target="_blank""><img alt="インスタの画像" src="img/Instagram-copy.png"></a></ll>
+ <li class="underli2"><a href=""><img alt="メルカリの画像" src="img/mercari1-copy.png"></a></ll>
+ <li class="underli2"><a href="https://minne.com/@beni-shop" target="_blank"><img alt="ミンネの画像" src="img/minne1-copy.png"></a></ll>
+</ul>
+</div><!--underbox1-->
+
+
+
+
+<p class="under">
+ Copyright &copy; 2025 handmade.kobo.Beni All rights reserved.
+</p>
+
+</footer>
+
+
+
+
+
+</body>
+
+</html>
+
